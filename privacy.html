@@ -10,14 +10,14 @@ article{background:var(--card);border-radius:24px;padding:28px 24px}
 h1{margin:0 0 4px}h2{margin-top:28px;font-size:1.15rem}p,li{color:var(--muted)}strong{color:var(--ink)}a{color:var(--ember)}
 </style></head><body><main><article>
 <h1>SetAnvil Privacy Policy</h1>
-<p>Effective November 24, 2026</p>
+<p>Effective November 25, 2026</p>
 
 <h2>The short version</h2>
 <p>Your workouts stay on your iPhone. We only store what's needed to sign you in. No ads, no analytics, no tracking, and we never sell data.</p>
 
 <h2>What stays on your device</h2>
 <ul>
-<li><strong>Plans, sets, weights, and workout history</strong> are saved in SetAnvil's private storage on your iPhone, encrypted by iOS Data Protection. They are not uploaded to our servers.</li>
+<li><strong>Plans, sets, weights, workout history, and water intake</strong> are saved in SetAnvil's private storage on your iPhone, encrypted by iOS Data Protection. They are not uploaded to our servers.</li>
 <li><strong>Face ID / Touch ID</strong>, if you turn it on, is handled entirely by iOS. SetAnvil never sees your biometric data.</li>
 </ul>
 
@@ -25,7 +25,13 @@ h1{margin:0 0 4px}h2{margin-top:28px;font-size:1.15rem}p,li{color:var(--muted)}s
 <p>If you create an account, your <strong>name, email address, and a securely hashed password</strong> are stored by our authentication provider, Supabase, solely to sign you in, confirm your email, and reset your password. You can use SetAnvil without an account.</p>
 
 <h2>Apple Health</h2>
-<p>If you allow it, SetAnvil <strong>writes</strong> each finished workout to Apple Health as a strength-training workout. SetAnvil does not read your Health data. Health data is never sent to our servers, used for advertising or marketing, sold, or shared with third parties. You can revoke access at any time in the Health app → Sharing → Apps.</p>
+<p>If you allow it, SetAnvil:</p>
+<ul>
+<li><strong>Writes</strong> each finished workout (as a strength-training workout) and the water you log.</li>
+<li><strong>Reads heart rate</strong> recorded by your Apple Watch, to show it live during a workout and save your average and max with that workout in the app.</li>
+<li><strong>Reads workouts</strong> around the time of your session, only to avoid saving a duplicate if your Apple Watch already recorded the same workout.</li>
+</ul>
+<p>Health data stays on your iPhone. It is never sent to our servers, used for advertising or marketing, sold, or shared with third parties. You can revoke access at any time in the Health app → Sharing → Apps.</p>
 
 <h2>Notifications</h2>
 <p>Rest-timer alerts are local notifications scheduled on your iPhone. No notification data leaves your device.</p>
