@@ -10,10 +10,10 @@ article{background:var(--card);border-radius:24px;padding:28px 24px}
 h1{margin:0 0 4px}h2{margin-top:28px;font-size:1.15rem}p,li{color:var(--muted)}strong{color:var(--ink)}a{color:var(--ember)}
 </style></head><body><main><article>
 <h1>SetAnvil Privacy Policy</h1>
-<p>Effective November 25, 2026</p>
+<p>Effective November 25, 2026 (updated for meal scanning)</p>
 
 <h2>The short version</h2>
-<p>Your workouts stay on your iPhone. We only store what's needed to sign you in. No ads, no analytics, no tracking, and we never sell data.</p>
+<p>Your workouts and meals stay on your iPhone. We only store what's needed to sign you in. Meal photos you choose to scan are analyzed by AI and not kept by us. No ads, no analytics, no tracking, and we never sell data.</p>
 
 <h2>What stays on your device</h2>
 <ul>
@@ -23,6 +23,16 @@ h1{margin:0 0 4px}h2{margin-top:28px;font-size:1.15rem}p,li{color:var(--muted)}s
 
 <h2>Account information</h2>
 <p>If you create an account, your <strong>name, email address, and a securely hashed password</strong> are stored by our authentication provider, Supabase, solely to sign you in, confirm your email, and reset your password. You can use SetAnvil without an account.</p>
+
+<h2>Meal photo scanning (optional)</h2>
+<p>When you scan a meal, SetAnvil asks for your permission first. Then:</p>
+<ul>
+<li>The photo (and any note you add) is sent over an encrypted connection to SetAnvil's server, which forwards it to <strong>Anthropic's Claude AI</strong> to estimate the foods, portions, calories and macros.</li>
+<li><strong>SetAnvil's server does not store your photo or the result.</strong> It records only the time of each scan, linked to your account, to enforce a daily limit; those records are deleted after two days.</li>
+<li>Anthropic processes the photo under its commercial API terms, which do not allow using it to train AI models, and may keep it for a limited time for safety and abuse monitoring.</li>
+<li>The photo and the estimate are saved on your iPhone with your meal log. Deleting the meal deletes the photo.</li>
+</ul>
+<p>You can withdraw permission in Settings → Allow AI meal scanning. Scanning needs an account; everything else works without one.</p>
 
 <h2>Apple Health</h2>
 <p>If you allow it, SetAnvil:</p>
